@@ -25,4 +25,9 @@ function calculate() {
     result.style.color = "#FF5E57";
   }
   document.getElementById("comment").textContent= comment;
+
+}
+
+function clearAll(){
+    window.location.reload();
 }
