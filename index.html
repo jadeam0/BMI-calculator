@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bmi-box">
+        <h1>BMI Calculator</h1>
+        <!-- <form class="form"> -->
+             <!-- age -->
+            <!-- <div class="age input">
+                <label for="age" type="number">Age: </label>
+                <input type="number" type="number" placeholder="Enter your age">
+            </div> -->
+            
+            <!-- height -->
+            <div class="h input">
+                <label for="height" type="number">Height (CM): </label>
+                <input id="height" type="number" placeholder="Enter height" autocomplete="off" required>
+            </div>
+
+            <!-- weight -->
+            <div class="w input">
+                <label for="weight" type="number">Weight (KG): </label>
+                <input id="weight" type="number" placeholder="Enter weight" required>
+            </div>
+
+            <!-- calculate button -->
+            <button class="calculate" onclick="calculate();">Calculate BMI</button>
+        <!-- </form> -->
+
+        <div class="result">
+            <p>Your BMI is</p>
+            <p id="result"></p>
+
+            <p id="comment"></p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+      </div></div>
+<script src="./index.js"></script>
+</body>
+</html>
